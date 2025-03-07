@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0f5); /* Light gradient background */
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient header */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin: 2rem auto;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animated Coding Icons */
+.animated-icons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.animated-icons i {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(106, 17, 203, 0.2); /* Vibrant icon color */
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animated-icons i:nth-child(1) { left: 5%; top: 10%; animation-duration: 6s; }
+.animated-icons i:nth-child(2) { left: 20%; top: 30%; animation-duration: 8s; }
+.animated-icons i:nth-child(3) { left: 70%; top: 20%; animation-duration: 7s; }
+.animated-icons i:nth-child(4) { left: 80%; top: 50%; animation-duration: 9s; }
+.animated-icons i:nth-child(5) { left: 10%; top: 70%; animation-duration: 5s; }
+.animated-icons i:nth-child(6) { left: 60%; top: 80%; animation-duration: 6s; }
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 90%;
+    background: #fff; /* White background for sections */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2575fc; /* Vibrant blue for headings */
+    border-bottom: 2px solid #6a11cb; /* Purple accent */
+    padding-bottom: 0.5rem;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+    border: 4px solid #6a11cb; /* Purple border */
+    animation: popIn 1.5s ease-in-out;
+}
+
+@keyframes popIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #f4f4f9; /* Light background for skill items */
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border-left: 4px solid #2575fc; /* Vibrant blue accent */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Projects Section */
+.project {
+    margin: 2rem 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    color: #6a11cb; /* Purple for project titles */
+}
+
+/* Contact Section */
+#contact p {
+    margin: 0.5rem 0;
+}
+
+#contact a {
+    color: #2575fc; /* Vibrant blue for links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f4f4f9; /* Light background for inputs */
+    color: #333;
+}
+
+form button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient button */
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05); /* Button hover effect */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient footer */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
